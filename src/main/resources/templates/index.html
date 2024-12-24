@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated String</title>
+    <title>Input Form</title>
 </head>
 <body>
+    <h1>Enter a string:</h1>
     <form action="/display" method="post">
-        <label for="userInput">Enter a string: </label>
-        <input type="text" name="userInput" id="userInput" required>
+        <input type="text" name="userInput" />
         <button type="submit">Submit</button>
     </form>
 </body>

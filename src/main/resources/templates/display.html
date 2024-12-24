@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display String</title>
+    <title>Display</title>
 </head>
 <body>
-    <h1>Your Input: ${userInput}</h1>
-    <a href="/">Go back</a>
+    <h1>Your input was: <span th:text="${userInput}"></span></h1>
 </body>
 </html>
