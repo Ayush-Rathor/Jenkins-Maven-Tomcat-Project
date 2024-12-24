@@ -1,23 +1,12 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display String</title>
-    <style>
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .animated-text {
-            font-size: 2rem;
-            color: #3498db;
-            animation: fadeIn 2s ease-in-out;
-        }
-    </style>
 </head>
 <body>
-    <h1>Your String:</h1>
-    <div class="animated-text" th:text="${userInput}"></div>
-    <a href="/">Go Back</a>
+    <h1>Your Input: ${userInput}</h1>
+    <a href="/">Go back</a>
 </body>
 </html>

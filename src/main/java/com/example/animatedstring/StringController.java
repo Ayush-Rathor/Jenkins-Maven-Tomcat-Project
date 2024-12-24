@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class StringController {
 
-    // Handle GET request for the form
+    // Show the input form
     @GetMapping("/")
     public String showForm() {
-        return "index"; // Render the index.html template
+        return "index";  // This corresponds to index.html in templates
     }
 
-    // Handle POST request to display the entered string
+    // Handle form submission and display the user input
     @PostMapping("/display")
     public String displayString(@RequestParam("userInput") String userInput, Model model) {
-        model.addAttribute("userInput", userInput); // Add user input to the model
-        return "display"; // Render the display.html template
+        model.addAttribute("userInput", userInput);
+        return "display";  // This corresponds to display.html in templates
     }
 }
