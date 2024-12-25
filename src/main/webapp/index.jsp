@@ -4,7 +4,6 @@
     <title>My Web App</title>
 </head>
 <body>
-    <h1>Welcome to My Web App!</h1>
-    <a href="hello">Test Deployment</a>
+    <h1><center>Welcome to My Web App!</center></h1>
 </body>
 </html>
